@@ -1,5 +1,6 @@
 # .gitignore
 config.py
+.cache
 
 # Virtual environment
 venv/
