@@ -1,0 +1,22 @@
+# .gitignore
+config.py
+
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Ignore all .json and .csv files in data/raw/
+data/raw/*.json
+data/raw/*.csv
+
+# Ignore all .csv files in data/processed/
+data/processed/*.csv

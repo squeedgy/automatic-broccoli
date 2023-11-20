@@ -1,0 +1,11 @@
+name: spotify-music-madness
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - pandas
+  - requests
+  - spotipy
