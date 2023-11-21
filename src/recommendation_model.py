@@ -47,4 +47,3 @@ if __name__ == "__main__":
     merged_data = load_latest_data()
 
     train_and_save_model(merged_data)
- 
