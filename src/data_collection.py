@@ -14,7 +14,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     redirect_uri="http://localhost:8888/callback",
     scope="user-library-read user-read-recently-played"
 ))
-
+ 
 def get_user_data():
     user_info = sp.current_user()
 
