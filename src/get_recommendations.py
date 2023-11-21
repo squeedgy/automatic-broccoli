@@ -22,7 +22,7 @@ def load_latest_data():
     merged_data = pd.merge(liked_songs_data, user_data_df, how="inner", on="user_id")
 
     return merged_data
-
+ 
 def load_collaborative_filtering_model():
     models_dir = os.path.join(os.path.dirname(__file__), "..", "models")
     cf_model_path = os.path.join(models_dir, "collaborative_filtering_model.pkl")

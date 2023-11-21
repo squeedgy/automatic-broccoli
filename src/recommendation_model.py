@@ -4,7 +4,7 @@ from surprise import Dataset, Reader
 from surprise import SVD
 import joblib
 import glob
-
+ 
 def load_latest_data():
     processed_data_path = os.path.join(os.path.dirname(__file__), "..", "data", "processed")
 
