@@ -5,7 +5,7 @@ from surprise import SVD
 from sklearn.metrics import mean_squared_error
 import joblib
 import os
-import glob
+import glob 
 
 def load_data():
     processed_data_path = os.path.join(os.path.dirname(__file__), "..", "data", "processed")

@@ -3,7 +3,7 @@ from spotipy.oauth2 import SpotifyOAuth
 import json
 import os
 from datetime import datetime
-
+ 
 credentials_path = os.path.join(os.path.dirname(__file__), "../data/raw/spotify_credentials.json")
 with open(credentials_path, "r") as file:
     spotify_credentials = json.load(file)
