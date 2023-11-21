@@ -19,7 +19,8 @@ def preprocess_user_data(user_info):
         "display_name": user_info.get("display_name", ""),
         "email": user_info.get("email", ""),
         "followers": user_info.get("followers", {}).get("total", 0),
-        "country": user_info.get("country", "")
+        "country": user_info.get("country", ""),
+        "user_id": 1
     }
 
     return user_data
@@ -30,6 +31,8 @@ def preprocess_liked_songs_data(liked_songs_data):
         track_info = item.get("track", {})
         added_at = item.get("added_at", "")
         liked_songs_list.append({
+            "user_id": 1,
+            "track_id": track_info.get("id", ""),
             "added_at": added_at,
             "track_name": track_info.get("name", ""),
             "artist_name": track_info.get("artists", [{}])[0].get("name", ""),

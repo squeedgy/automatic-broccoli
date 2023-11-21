@@ -1,6 +1,7 @@
 # .gitignore
 config.py
 .cache
+collaborative_filtering_model.pkl
 
 # Virtual environment
 venv/
